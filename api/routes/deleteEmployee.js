@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const deleteEmployeeController = require('../controllers/deleteEmployee');
+const controller = require('../controllers/controller');
 
-router.delete('/:employeeId', deleteEmployeeController.deleteEmployee);
+router.delete('/:employeeId', controller.deleteEmployee);
 
 module.exports = router;
