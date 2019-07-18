@@ -16,17 +16,16 @@ request.get(
 { url: getEmployeeUrl },
 function (err, res, body) {
   if (err) { return console.log(err); }
+  console.log('Retrieved User: ')
   console.log(res.body);
 });
-//   console.log('Returned EmployeeID:');
-//   exports.returnedEmployeeId = JSON.parse(res.body);
-//   console.log(exports.returnedEmployeeId);
-//   const deleteEmployeeUrl = 'http://localhost:3000/api/v1/delete/' + exports.returnedEmployeeId + '/';
-//   console.log(deleteEmployeeUrl);
-//   request.delete(
-//     { url: deleteEmployeeUrl },
-//     function (err, res, body) {
-//       if (err) { return console.log(err); }
-//       console.log('Tests complete.');
-//     });
+
+
+// const deleteEmployeeUrl = 'http://localhost:3000/api/v1/delete/' + exports.retrievedEmployeeId + '/';
+// request.delete(
+//   { url: deleteEmployeeUrl },
+//   function (err, res, body) {
+//     if (err) { return console.log(err) }
+//     console.log('Deleted!');
+//     console.log(res.body);
 // });

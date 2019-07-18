@@ -19,6 +19,6 @@ const deleteEmployeeRoute = require('./api/routes/deleteEmployee');
 app.use('/api/v1/employees', employeeRoute);
 app.use('/api/v1/delete', deleteEmployeeRoute);
 
-//const test = require('./test');
+const test = require('./test');
 
 module.exports = app;
